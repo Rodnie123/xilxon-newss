@@ -1,0 +1,216 @@
+.card {
+  position: relative;
+}
+
+.modals {
+  color: #fff;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+}
+.modals.active .modal-drop {
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.modals.active .modal-content {
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in 1.5s;
+  transition: 0.5s ease-in 1.5s;
+}
+
+.modal-drop {
+  background: #021e7c;
+  border-radius: 50%;
+  width: 150vh;
+  height: 150vh;
+  position: absolute;
+  margin-left: -75vh;
+  margin-top: -75vh;
+  -webkit-transition: -webkit-transform 2s cubic-bezier(0.25, 1, 0.6, 1), -webkit-transform-origin 0s;
+  transition: -webkit-transform 2s cubic-bezier(0.25, 1, 0.6, 1), -webkit-transform-origin 0s;
+  transition: transform 2s cubic-bezier(0.25, 1, 0.6, 1), transform-origin 0s;
+  transition: transform 2s cubic-bezier(0.25, 1, 0.6, 1), transform-origin 0s, -webkit-transform 2s cubic-bezier(0.25, 1, 0.6, 1), -webkit-transform-origin 0s;
+  -webkit-transform: scale(0.001);
+  transform: scale(0.001);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.modal-content {
+  background: #0028b1;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: 0.5s 0s;
+  transition: 0.5s 0s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.modal-wrap {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  max-width: 50em;
+}
+.modal-wrap ul li img {
+  width: 100%;
+
+} 
+
+/* Page Styling */
+::-moz-selection {
+  background: #ffc44d;
+  color: #fff;
+}
+::selection {
+  background: #ffc44d;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #ffc44d;
+  color: #fff;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #ffffff;
+  color: #1a3c4d;
+  font: 1.125em/1.65 "Open Sans", sans-serif;
+  letter-spacing: 0.01em;
+  text-rendering: optimizeLegibility;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.card {
+  /* background: #fff; */
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  max-width: 20em;
+  padding: 0em;
+  position: relative;
+  max-width: 200px;
+  position: relative;
+  top: 0px;
+  /* float: right; */
+  left: -102px;
+  display: inline-block;
+  margin-left: 107px;
+}
+.card::before {
+  content: '';
+  /* border: 1px dotted #75f0d1; */
+  position: absolute;
+  top: 1.25em;
+  right: 1.25em;
+  bottom: 1.25em;
+  left: 1.25em;
+  pointer-events: none;
+}
+.card p {
+  margin: 0.5em 0 1em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #d4f7e5;
+}
+
+.open,
+.close {
+  background: -webkit-linear-gradient(#92e8bb, #77e4b7);
+  background: linear-gradient(#021e7c, #021e7c);
+  border: 1px solid #021e7c;
+  border-bottom: 4px solid #021e7c;
+  border-radius: 24px;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.2em 1em 0.2em;
+  text-shadow: 1px 1px 0 #021e7c;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  /* float: right; */
+  display: block;
+  margin-left: 21px;
+  max-width: 200px;
+}
+.open:hover,
+.close:hover {
+  -webkit-filter: brightness(90%) contrast(120%);
+          filter: brightness(90%) contrast(120%);
+}
+.open:focus,
+.close:focus {
+  box-shadow: 0 0 10px #92e8bb;
+  outline: none;
+}
+
+.close {
+  background: -webkit-linear-gradient(#fa5433, #fa3333);
+  background: linear-gradient(#fa5433, #fa3333);
+  border: 1px solid #fa3333;
+  border-bottom: 4px solid #d60505;
+  text-shadow: 1px 1px 0 #d60505;
+}
+.close:focus {
+  box-shadow: 0 0 10px #fa5433;
+}
+@media (min-width: 200px) {
+  .modal-wrap ul li img {
+  width: 100%;
+  padding: 20px;
+
+  }
+  button.close {
+  -webkit-appearance: none;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  margin-top: 10px;
+}
+}
+  @media (min-width: 1024px) {
+  .modal-wrap ul li img {
+  width: 100%;
+  padding: 0;
+  }
+  button.close {
+  -webkit-appearance: none;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  margin-top: -490px;
+} 
+}

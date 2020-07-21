@@ -1,0 +1,36 @@
+.menu-row .name{
+    font-size: 12px;
+}
+
+.calc-label{
+    font-size: 18px;
+}
+
+.affiliate-title{
+    font-size: 22px;
+}
+
+.auth-title{
+    font-size: 20px;
+}
+
+
+.referral-top .title{
+    padding-left: 1px;
+}
+
+.referral-top .ref-link{
+    margin-left: 20px;
+}
+
+.referral-top .ref-upline{
+    margin-left: 20px;
+}
+
+.table-earnings{
+    width: 750px;
+}
+
+.deposit-plan .info .daily{
+    font-size: 13px;
+}

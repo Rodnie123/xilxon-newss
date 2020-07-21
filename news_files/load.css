@@ -1,0 +1,22 @@
+#wave{
+    display: block;
+    position: fixed;
+    background: #fff url("../img/i-2.png") 50% 150px no-repeat;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+}
+
+#wave .gradient{
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 300px;
+    background: url("https://ddgu.ddos-guard.net/ddgu/?h=aHR0cHM6Ly93d3cuYml0YWVvbi5pbw==&amp;u=L2ltZy9ncmFkaWVudC5wbmc=") repeat-y;
+    left: -300px;
+    top: 0;
+    z-index: 100;
+}
